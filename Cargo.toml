@@ -1,0 +1,18 @@
+[package]
+name = "surrealdb-issue-3002-1-0-0-release-websock-perf-regression"
+version = "0.0.0"
+edition = "2021"
+authors = ["Cameron <cameron@drivenow.com.au>"]
+
+[dependencies]
+tokio = { version = "1.0", features = [
+    "rt-multi-thread",
+    "macros",
+    "sync",
+    "time",
+    "full",
+] }
+color-eyre = "0.6.2"
+surrealdb = { git = "https://github.com/surrealdb/surrealdb.git", commit = "94d2ffff24853854d25d88649e560f56130f291b" }
+fake = { version = "2.9", features = ["derive"] }
+serde = { version = "1", features = ["derive", "rc"] }

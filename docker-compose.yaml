@@ -1,0 +1,17 @@
+version: "3"
+services:
+
+  surreal:
+    image: surrealdb/surrealdb:nightly
+    restart: always
+    user: root # hacky workaround for 2023-11-21T23:53:18.227577Z ERROR surreal::cli: There was a problem with the database: There was a problem with a datastore transaction: Failed to create RocksDB directory: `Os { code: 13, kind: PermissionDenied, message: "Permission denied" }`.
+    ports:
+      - "12773:8000"
+    environment:
+      SURREAL_WEBSOCKET_MAX_CONCURRENT_REQUESTS: "1000000"
+    command: 
+      - start
+      - --allow-all
+      - file:/data/db
+    volumes:
+      - ./data:/data

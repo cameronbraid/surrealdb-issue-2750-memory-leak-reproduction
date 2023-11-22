@@ -1,0 +1,30 @@
+Memory at start 79104
+Memory at end 2129224
+Disk Usage 15M
+
+Write Duration: 134.626043ms
+Read Duration: 955.834261ms
+Write Duration: 428.088916ms
+Read Duration: 939.948739ms
+Write Duration: 695.941826ms
+Read Duration: 960.141881ms
+Write Duration: 931.751361ms
+Read Duration: 944.407839ms
+Write Duration: 1.171660517s
+Read Duration: 952.029478ms
+Write Duration: 1.788119679s
+Read Duration: 947.912489ms
+Write Duration: 2.067952736s
+Read Duration: 955.965443ms
+Write Duration: 2.300005906s
+Read Duration: 923.142597ms
+Write Duration: 2.573149297s
+Read Duration: 955.682982ms
+Write Duration: 2.852189482s
+Read Duration: 955.761067ms
+Write Duration: 3.295898439s
+Read Duration: 952.158956ms
+Write Duration: 3.380019745s
+Read Duration: 896.764777ms
+Write Duration: 3.775141356s
+Read Duration: 956.048095ms
