@@ -8,3 +8,5 @@ cargo run
 ```
 
 monitor memory using top/htop
+
+see [results.txt](results.txt) for what I observed
