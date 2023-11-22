@@ -16,7 +16,7 @@ async fn main() -> Result<()> {
 
     surreal.use_ns("test").use_db("test").await.unwrap();
 
-    loop {
+    for _ in 0..14 {
         let start = Instant::now();
         init_task(surreal.clone()).await;
         println!("Write Duration: {:?}", start.elapsed());
@@ -31,7 +31,7 @@ async fn main() -> Result<()> {
         }
         println!("Read Duration: {:?}", start.elapsed());
     }
-    // Ok(())
+    Ok(())
 }
 
 #[derive(Debug, Dummy, Serialize, Deserialize, Clone)]
