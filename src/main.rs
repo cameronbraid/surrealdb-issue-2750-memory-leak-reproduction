@@ -16,10 +16,10 @@ async fn main() -> Result<()> {
 
     surreal.use_ns("test").use_db("test").await.unwrap();
 
-    for _ in 0..14 {
+    for i in 1..=13 {
         let start = Instant::now();
         init_task(surreal.clone()).await;
-        println!("Write Duration: {:?}", start.elapsed());
+        println!("#{i}: Write Duration: {:?}", start.elapsed());
 
         let start = Instant::now();
         let mut join_set = JoinSet::new();
@@ -29,7 +29,7 @@ async fn main() -> Result<()> {
         while let Some(data) = join_set.join_next().await {
             data.unwrap();
         }
-        println!("Read Duration: {:?}", start.elapsed());
+        println!("#{i}: Read Duration: {:?}", start.elapsed());
     }
     Ok(())
 }

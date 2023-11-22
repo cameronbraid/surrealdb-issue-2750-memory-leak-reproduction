@@ -1,30 +1,30 @@
 Memory at start 79104
-Memory at end 2129224
+Memory at end 2127372
 Disk Usage 15M
 
-Write Duration: 134.626043ms
-Read Duration: 955.834261ms
-Write Duration: 428.088916ms
-Read Duration: 939.948739ms
-Write Duration: 695.941826ms
-Read Duration: 960.141881ms
-Write Duration: 931.751361ms
-Read Duration: 944.407839ms
-Write Duration: 1.171660517s
-Read Duration: 952.029478ms
-Write Duration: 1.788119679s
-Read Duration: 947.912489ms
-Write Duration: 2.067952736s
-Read Duration: 955.965443ms
-Write Duration: 2.300005906s
-Read Duration: 923.142597ms
-Write Duration: 2.573149297s
-Read Duration: 955.682982ms
-Write Duration: 2.852189482s
-Read Duration: 955.761067ms
-Write Duration: 3.295898439s
-Read Duration: 952.158956ms
-Write Duration: 3.380019745s
-Read Duration: 896.764777ms
-Write Duration: 3.775141356s
-Read Duration: 956.048095ms
+#1: Write Duration: 184.492035ms
+#1: Read Duration: 952.120675ms
+#2: Write Duration: 372.013774ms
+#2: Read Duration: 984.013053ms
+#3: Write Duration: 583.997516ms
+#3: Read Duration: 948.273238ms
+#4: Write Duration: 779.510422ms
+#4: Read Duration: 960.45375ms
+#5: Write Duration: 975.606926ms
+#5: Read Duration: 952.077307ms
+#6: Write Duration: 1.483870672s
+#6: Read Duration: 975.943631ms
+#7: Write Duration: 1.631999362s
+#7: Read Duration: 944.350567ms
+#8: Write Duration: 1.819780877s
+#8: Read Duration: 964.031357ms
+#9: Write Duration: 2.08380364s
+#9: Read Duration: 944.156815ms
+#10: Write Duration: 2.299945319s
+#10: Read Duration: 956.088803ms
+#11: Write Duration: 2.499731239s
+#11: Read Duration: 964.060459ms
+#12: Write Duration: 2.69997942s
+#12: Read Duration: 960.067499ms
+#13: Write Duration: 3.003879389s
+#13: Read Duration: 980.123526ms

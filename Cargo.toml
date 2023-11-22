@@ -13,6 +13,6 @@ tokio = { version = "1.0", features = [
     "full",
 ] }
 color-eyre = "0.6.2"
-surrealdb = { git = "https://github.com/surrealdb/surrealdb.git", commit = "94d2ffff24853854d25d88649e560f56130f291b" }
+surrealdb = { git = "https://github.com/surrealdb/surrealdb.git", commit = "9ead2cdbb62d92d40a777715fb2cd4816e537a60" }
 fake = { version = "2.9", features = ["derive"] }
 serde = { version = "1", features = ["derive", "rc"] }
