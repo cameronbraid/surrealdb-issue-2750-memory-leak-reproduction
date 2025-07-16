@@ -16,7 +16,7 @@ async fn main() -> Result<()> {
 
     surreal.use_ns("test").use_db("test").await.unwrap();
 
-    for i in 1..=13 {
+    for i in 1..=30 {
         let start = Instant::now();
         init_task(surreal.clone()).await;
         println!("#{i}: Write Duration: {:?}", start.elapsed());
@@ -103,7 +103,7 @@ async fn init_task(surreal: Surreal<Any>) {
                             relate foo:[$foo.pk]->has->bar:[$bar.pk] return none;
                 ",
                         )
-                        .bind(("foo", &foo))
+                        .bind(("foo", foo.clone()))
                         .await
                         .unwrap()
                         .check()
@@ -135,7 +135,7 @@ async fn init_task(surreal: Surreal<Any>) {
                 loop {
                     match db
                         .query("create bar:[$bar.pk] content $bar return none;")
-                        .bind(("bar", &bar))
+                        .bind(("bar", bar.clone()))
                         .await
                         .unwrap()
                         .check()
